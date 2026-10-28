@@ -1,0 +1,20 @@
+# Archivos de credenciales y variables de entorno
+.env
+*.env
+
+# Terraform (Estado e infraestructura en plano)
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Python (Archivos temporales y entornos virtuales)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
