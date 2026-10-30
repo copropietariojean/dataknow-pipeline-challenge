@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "date_range": {
+    "start_date": "2025-10-01",
+    "end_date": "2026-09-30"
+  },
+  "null_rate": 0.05,
+  "volumes": {
+    "tb_clientes_core": 10000,
+    "tb_productos_cat": 50,
+    "tb_mov_financieros": 500000,
+    "tb_obligaciones": 30000,
+    "tb_sucursales_red": 200,
+    "tb_comisiones_log": 80000
+  },
+  "output_formats": ["csv", "parquet", "json"]
+}
