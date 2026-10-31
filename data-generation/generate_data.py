@@ -160,8 +160,8 @@ print(">>> Exportando en múltiples formatos (CSV, Parquet, JSON)...")
 # Formato JSON
 df_productos.to_json(os.path.join(out_dir, "TB_PRODUCTOS_CAT.json"), orient="records", indent=2)
 # Formato CSV
-df_sucursales.to_csv(os.path.join(out_dir, "TB_SUCURSALES_RED.csv"), index=False)
-df_clientes.to_csv(os.path.join(out_dir, "TB_CLIENTES_CORE.csv"), index=False)
+df_sucursales.to_csv(os.path.join(out_dir, "TB_SUCURSALES_RED.csv"), index=False, encoding="utf-8-sig")
+df_clientes.to_csv(os.path.join(out_dir, "TB_CLIENTES_CORE.csv"), index=False, encoding="utf-8-sig")
 # Formato Parquet (Altamente eficiente para Big Data)
 df_obligaciones.to_parquet(os.path.join(out_dir, "TB_OBLIGACIONES.parquet"), index=False)
 df_movs.to_parquet(os.path.join(out_dir, "TB_MOV_FINANCIEROS.parquet"), index=False)

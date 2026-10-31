@@ -1,0 +1,502 @@
+[
+  {
+    "cod_prod":"PRD_001",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 1",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.1258,
+    "plazo_max_meses":36,
+    "cuota_min":50000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_002",
+    "desc_prod":"Producto Tarjeta Digital Tipo 2",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0616,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_003",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 3",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2558,
+    "plazo_max_meses":12,
+    "cuota_min":50000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_004",
+    "desc_prod":"Producto Tarjeta Digital Tipo 4",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0263,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_005",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 5",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2491,
+    "plazo_max_meses":60,
+    "cuota_min":100000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_006",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 6",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.2555,
+    "plazo_max_meses":12,
+    "cuota_min":50000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_007",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 7",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.1983,
+    "plazo_max_meses":24,
+    "cuota_min":50000,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_008",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 8",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.1413,
+    "plazo_max_meses":12,
+    "cuota_min":100000,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_009",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 9",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0665,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_010",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 10",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.2433,
+    "plazo_max_meses":48,
+    "cuota_min":50000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_011",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 11",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0681,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_012",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 12",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0504,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_013",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 13",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.1305,
+    "plazo_max_meses":24,
+    "cuota_min":100000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_014",
+    "desc_prod":"Producto Tarjeta Digital Tipo 14",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0707,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_015",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 15",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0417,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_016",
+    "desc_prod":"Producto Tarjeta Digital Tipo 16",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0359,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_017",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 17",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0591,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_018",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 18",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2601,
+    "plazo_max_meses":24,
+    "cuota_min":200000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_019",
+    "desc_prod":"Producto Tarjeta Digital Tipo 19",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0214,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_020",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 20",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0793,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_021",
+    "desc_prod":"Producto Tarjeta Digital Tipo 21",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0579,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_022",
+    "desc_prod":"Producto Tarjeta Digital Tipo 22",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0675,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_023",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 23",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.1816,
+    "plazo_max_meses":24,
+    "cuota_min":200000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_024",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 24",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0249,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_025",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 25",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.3235,
+    "plazo_max_meses":48,
+    "cuota_min":50000,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_026",
+    "desc_prod":"Producto Tarjeta Digital Tipo 26",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0273,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_027",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 27",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0623,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_028",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 28",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.2033,
+    "plazo_max_meses":24,
+    "cuota_min":200000,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_029",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 29",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2938,
+    "plazo_max_meses":12,
+    "cuota_min":50000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_030",
+    "desc_prod":"Producto Tarjeta Digital Tipo 30",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0654,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_031",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 31",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2085,
+    "plazo_max_meses":60,
+    "cuota_min":100000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_032",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 32",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.078,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_033",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 33",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2768,
+    "plazo_max_meses":60,
+    "cuota_min":100000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_034",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 34",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0178,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_035",
+    "desc_prod":"Producto Tarjeta Digital Tipo 35",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0418,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_036",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 36",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.078,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_037",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 37",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.3202,
+    "plazo_max_meses":36,
+    "cuota_min":200000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_038",
+    "desc_prod":"Producto Tarjeta Digital Tipo 38",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0207,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_039",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 39",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2578,
+    "plazo_max_meses":48,
+    "cuota_min":50000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_040",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 40",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0715,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_041",
+    "desc_prod":"Producto Tarjeta Digital Tipo 41",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0141,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_042",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 42",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.1397,
+    "plazo_max_meses":48,
+    "cuota_min":50000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_043",
+    "desc_prod":"Producto Tarjeta Digital Tipo 43",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.019,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_044",
+    "desc_prod":"Producto Tarjeta Digital Tipo 44",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0286,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_045",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 45",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.3418,
+    "plazo_max_meses":60,
+    "cuota_min":200000,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_046",
+    "desc_prod":"Producto Tarjeta Digital Tipo 46",
+    "tip_prod":"Tarjeta Digital",
+    "tasa_ea":0.0599,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_047",
+    "desc_prod":"Producto Cuenta de Ahorros Tipo 47",
+    "tip_prod":"Cuenta de Ahorros",
+    "tasa_ea":0.0407,
+    "plazo_max_meses":0,
+    "cuota_min":0,
+    "comision_admin":25000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_048",
+    "desc_prod":"Producto Cr\u00e9dito Rotativo Tipo 48",
+    "tip_prod":"Cr\u00e9dito Rotativo",
+    "tasa_ea":0.1478,
+    "plazo_max_meses":24,
+    "cuota_min":50000,
+    "comision_admin":12000,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_049",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 49",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.2553,
+    "plazo_max_meses":24,
+    "cuota_min":200000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  },
+  {
+    "cod_prod":"PRD_050",
+    "desc_prod":"Producto Cr\u00e9dito de Consumo Tipo 50",
+    "tip_prod":"Cr\u00e9dito de Consumo",
+    "tasa_ea":0.1363,
+    "plazo_max_meses":12,
+    "cuota_min":50000,
+    "comision_admin":0,
+    "estado_prod":"ACTIVO"
+  }
+]

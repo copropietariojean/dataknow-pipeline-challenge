@@ -1,0 +1,201 @@
+﻿cod_suc,nom_suc,tip_punto,ciudad,depto,latitud,longitud,activo
+SUC_001,Sucursal Bogotá 1,Corresponsal,Bogotá,Cundinamarca,4.668085734988866,-74.0982995365631,1
+SUC_002,Sucursal Barranquilla 2,Física,Barranquilla,Atlántico,10.972423393139476,-74.75896474341191,1
+SUC_003,Sucursal Bucaramanga 3,Kiosco,Bucaramanga,Santander,7.122667102631179,-73.09133805757092,1
+SUC_004,Sucursal Barranquilla 4,Física,Barranquilla,Atlántico,10.92793257964919,-74.76540172504853,1
+SUC_005,Sucursal Cali 5,Corresponsal,Cali,Valle del Cauca,3.442710227604974,-76.49561632516304,1
+SUC_006,Sucursal Bogotá 6,Kiosco,Bogotá,Cundinamarca,4.726345548826579,-74.05748202487051,1
+SUC_007,Sucursal Bogotá 7,Corresponsal,Bogotá,Cundinamarca,4.733821358844119,-74.04204074891383,1
+SUC_008,Sucursal Bogotá 8,Física,Bogotá,Cundinamarca,4.680159007214166,-74.06847142460897,1
+SUC_009,Sucursal Medellín 9,Corresponsal,Medellín,Antioquia,6.2125488035787235,-75.5849371931599,1
+SUC_010,Sucursal Bogotá 10,Corresponsal,Bogotá,Cundinamarca,4.741802224473171,-74.03650331075318,1
+SUC_011,Sucursal Bogotá 11,Física,Bogotá,Cundinamarca,4.726214489399853,-74.06804120618997,1
+SUC_012,Sucursal Bogotá 12,Física,Bogotá,Cundinamarca,4.753636698300813,-74.03723042655858,1
+SUC_013,Sucursal Medellín 13,Corresponsal,Medellín,Antioquia,6.242764112545072,-75.60982527008008,1
+SUC_014,Sucursal Barranquilla 14,Física,Barranquilla,Atlántico,10.934963712140153,-74.83108446216485,1
+SUC_015,Sucursal Barranquilla 15,Corresponsal,Barranquilla,Atlántico,11.011151807355933,-74.75278706432059,1
+SUC_016,Sucursal Cali 16,Corresponsal,Cali,Valle del Cauca,3.4712591503600163,-76.50894946825845,1
+SUC_017,Sucursal Bucaramanga 17,Kiosco,Bucaramanga,Santander,7.147240827529632,-73.1543203174726,1
+SUC_018,Sucursal Cali 18,Física,Cali,Valle del Cauca,3.4984709364969158,-76.52408197091837,1
+SUC_019,Sucursal Bucaramanga 19,Física,Bucaramanga,Santander,7.150197556037907,-73.16408347270925,1
+SUC_020,Sucursal Bucaramanga 20,Corresponsal,Bucaramanga,Santander,7.125685038291952,-73.08452801079517,1
+SUC_021,Sucursal Medellín 21,Física,Medellín,Antioquia,6.290277890327445,-75.62318885347594,1
+SUC_022,Sucursal Medellín 22,Física,Medellín,Antioquia,6.253703510645003,-75.56367874463959,1
+SUC_023,Sucursal Medellín 23,Corresponsal,Medellín,Antioquia,6.206188661394712,-75.54217126858705,1
+SUC_024,Sucursal Medellín 24,Kiosco,Medellín,Antioquia,6.253651915353345,-75.56926184896679,1
+SUC_025,Sucursal Barranquilla 25,Kiosco,Barranquilla,Atlántico,10.976867228929123,-74.7790217284468,1
+SUC_026,Sucursal Cali 26,Física,Cali,Valle del Cauca,3.468572597476983,-76.55058161372044,1
+SUC_027,Sucursal Cali 27,Corresponsal,Cali,Valle del Cauca,3.4146878282127457,-76.51744992111624,1
+SUC_028,Sucursal Barranquilla 28,Corresponsal,Barranquilla,Atlántico,11.011401833170552,-74.73772657125552,1
+SUC_029,Sucursal Bogotá 29,Corresponsal,Bogotá,Cundinamarca,4.723115925549309,-74.0658006354361,1
+SUC_030,Sucursal Bogotá 30,Física,Bogotá,Cundinamarca,4.714763440410163,-74.07151153059513,1
+SUC_031,Sucursal Medellín 31,Corresponsal,Medellín,Antioquia,6.282286417368645,-75.54327297575153,1
+SUC_032,Sucursal Cali 32,Corresponsal,Cali,Valle del Cauca,3.4173746832357232,-76.49862550453602,1
+SUC_033,Sucursal Cali 33,Kiosco,Cali,Valle del Cauca,3.4999853310251483,-76.50129000567348,1
+SUC_034,Sucursal Bucaramanga 34,Física,Bucaramanga,Santander,7.142186320371258,-73.11433977175103,1
+SUC_035,Sucursal Bogotá 35,Física,Bogotá,Cundinamarca,4.687446592148713,-74.03312872929943,1
+SUC_036,Sucursal Bucaramanga 36,Física,Bucaramanga,Santander,7.102634821231481,-73.10931701729697,1
+SUC_037,Sucursal Cali 37,Física,Cali,Valle del Cauca,3.4703497128801333,-76.49670871846081,1
+SUC_038,Sucursal Bucaramanga 38,Corresponsal,Bucaramanga,Santander,7.100512125206989,-73.07898409537815,1
+SUC_039,Sucursal Bogotá 39,Física,Bogotá,Cundinamarca,4.72442844473092,-74.03916519106278,1
+SUC_040,Sucursal Bogotá 40,Física,Bogotá,Cundinamarca,4.694355653860509,-74.10901803392984,1
+SUC_041,Sucursal Cali 41,Física,Cali,Valle del Cauca,3.475723090834793,-76.52683195788735,1
+SUC_042,Sucursal Barranquilla 42,Kiosco,Barranquilla,Atlántico,10.919466969960835,-74.82377561399262,1
+SUC_043,Sucursal Medellín 43,Kiosco,Medellín,Antioquia,6.197802813806083,-75.59427840154878,1
+SUC_044,Sucursal Bucaramanga 44,Física,Bucaramanga,Santander,7.118378671288077,-73.1656171141831,1
+SUC_045,Sucursal Cali 45,Física,Cali,Valle del Cauca,3.4914924636526474,-76.56099234616602,1
+SUC_046,Sucursal Medellín 46,Kiosco,Medellín,Antioquia,6.204479362167179,-75.55318837581285,1
+SUC_047,Sucursal Barranquilla 47,Kiosco,Barranquilla,Atlántico,10.993447761114355,-74.73872361774305,1
+SUC_048,Sucursal Medellín 48,Física,Medellín,Antioquia,6.291820603293097,-75.55012282800595,1
+SUC_049,Sucursal Barranquilla 49,Física,Barranquilla,Atlántico,10.936436066341821,-74.73885127047585,1
+SUC_050,Sucursal Barranquilla 50,Kiosco,Barranquilla,Atlántico,11.004906402837529,-74.75022506834256,1
+SUC_051,Sucursal Cali 51,Física,Cali,Valle del Cauca,3.480337450913547,-76.5711904373597,1
+SUC_052,Sucursal Bogotá 52,Corresponsal,Bogotá,Cundinamarca,4.683243371754567,-74.0404413394403,1
+SUC_053,Sucursal Barranquilla 53,Corresponsal,Barranquilla,Atlántico,10.94901908673386,-74.75176545008472,1
+SUC_054,Sucursal Medellín 54,Física,Medellín,Antioquia,6.196566443470146,-75.61188702116722,1
+SUC_055,Sucursal Cali 55,Corresponsal,Cali,Valle del Cauca,3.4880352942030286,-76.48531108959516,1
+SUC_056,Sucursal Cali 56,Corresponsal,Cali,Valle del Cauca,3.4657481738607627,-76.542032161564,1
+SUC_057,Sucursal Bucaramanga 57,Corresponsal,Bucaramanga,Santander,7.169323714032472,-73.15826582481486,1
+SUC_058,Sucursal Cali 58,Física,Cali,Valle del Cauca,3.459658973373871,-76.48364494271169,1
+SUC_059,Sucursal Bogotá 59,Física,Bogotá,Cundinamarca,4.720657125498775,-74.08753128883203,1
+SUC_060,Sucursal Cali 60,Corresponsal,Cali,Valle del Cauca,3.4622208853306145,-76.53085769403305,1
+SUC_061,Sucursal Barranquilla 61,Kiosco,Barranquilla,Atlántico,10.93750787745023,-74.82686134662868,1
+SUC_062,Sucursal Barranquilla 62,Física,Barranquilla,Atlántico,10.97049203485666,-74.75064891302999,1
+SUC_063,Sucursal Medellín 63,Corresponsal,Medellín,Antioquia,6.237329739962499,-75.53631255140286,1
+SUC_064,Sucursal Cali 64,Kiosco,Cali,Valle del Cauca,3.4329915645058358,-76.49719847204936,1
+SUC_065,Sucursal Cali 65,Kiosco,Cali,Valle del Cauca,3.4325284662208655,-76.54116070913807,1
+SUC_066,Sucursal Barranquilla 66,Kiosco,Barranquilla,Atlántico,10.948065520252594,-74.81857122009409,1
+SUC_067,Sucursal Barranquilla 67,Kiosco,Barranquilla,Atlántico,11.012536367073018,-74.76356820547272,1
+SUC_068,Sucursal Medellín 68,Kiosco,Medellín,Antioquia,6.251110525486581,-75.59059248312418,1
+SUC_069,Sucursal Bogotá 69,Corresponsal,Bogotá,Cundinamarca,4.689691371686893,-74.07911118500103,1
+SUC_070,Sucursal Bucaramanga 70,Kiosco,Bucaramanga,Santander,7.140870562370307,-73.12330118097529,1
+SUC_071,Sucursal Barranquilla 71,Kiosco,Barranquilla,Atlántico,10.939870140098911,-74.78398138140906,1
+SUC_072,Sucursal Medellín 72,Kiosco,Medellín,Antioquia,6.202679553672512,-75.57965479900848,1
+SUC_073,Sucursal Bucaramanga 73,Corresponsal,Bucaramanga,Santander,7.0847387200075564,-73.07460003375475,1
+SUC_074,Sucursal Medellín 74,Kiosco,Medellín,Antioquia,6.225241946429492,-75.55054371054237,1
+SUC_075,Sucursal Medellín 75,Física,Medellín,Antioquia,6.198821371809276,-75.53280639772181,1
+SUC_076,Sucursal Bucaramanga 76,Física,Bucaramanga,Santander,7.120941616838009,-73.0811863090949,1
+SUC_077,Sucursal Bucaramanga 77,Física,Bucaramanga,Santander,7.147234591549899,-73.13140215326072,1
+SUC_078,Sucursal Barranquilla 78,Física,Barranquilla,Atlántico,10.93325713450913,-74.76253775869195,1
+SUC_079,Sucursal Bogotá 79,Corresponsal,Bogotá,Cundinamarca,4.682884113681232,-74.0416890143827,1
+SUC_080,Sucursal Bucaramanga 80,Corresponsal,Bucaramanga,Santander,7.080421838514064,-73.14488017203401,1
+SUC_081,Sucursal Bogotá 81,Corresponsal,Bogotá,Cundinamarca,4.674333910555704,-74.07563567625019,1
+SUC_082,Sucursal Bucaramanga 82,Kiosco,Bucaramanga,Santander,7.134945231846942,-73.07479603915569,1
+SUC_083,Sucursal Barranquilla 83,Kiosco,Barranquilla,Atlántico,11.000000650733169,-74.7420979703659,1
+SUC_084,Sucursal Barranquilla 84,Kiosco,Barranquilla,Atlántico,10.96309136120767,-74.8153842092457,1
+SUC_085,Sucursal Barranquilla 85,Corresponsal,Barranquilla,Atlántico,10.944419154846502,-74.80657602624903,1
+SUC_086,Sucursal Cali 86,Kiosco,Cali,Valle del Cauca,3.4500597017070267,-76.55807541361854,1
+SUC_087,Sucursal Barranquilla 87,Física,Barranquilla,Atlántico,10.989854486261105,-74.80785064219855,1
+SUC_088,Sucursal Cali 88,Corresponsal,Cali,Valle del Cauca,3.4909026832790317,-76.57394223423422,1
+SUC_089,Sucursal Medellín 89,Física,Medellín,Antioquia,6.232503529243134,-75.61591947334227,1
+SUC_090,Sucursal Medellín 90,Física,Medellín,Antioquia,6.235686789589822,-75.59811186089618,1
+SUC_091,Sucursal Barranquilla 91,Corresponsal,Barranquilla,Atlántico,10.92472657105836,-74.74801088306596,1
+SUC_092,Sucursal Barranquilla 92,Kiosco,Barranquilla,Atlántico,11.01310620335901,-74.82934680432624,1
+SUC_093,Sucursal Bucaramanga 93,Corresponsal,Bucaramanga,Santander,7.123097973255736,-73.0755258342566,1
+SUC_094,Sucursal Cali 94,Corresponsal,Cali,Valle del Cauca,3.4869447950569104,-76.48665696615299,1
+SUC_095,Sucursal Barranquilla 95,Kiosco,Barranquilla,Atlántico,10.993251566897806,-74.77668676902661,1
+SUC_096,Sucursal Bucaramanga 96,Física,Bucaramanga,Santander,7.124222947755025,-73.14250646882367,1
+SUC_097,Sucursal Barranquilla 97,Física,Barranquilla,Atlántico,10.957385720324613,-74.76441263793771,1
+SUC_098,Sucursal Barranquilla 98,Kiosco,Barranquilla,Atlántico,10.935004473120351,-74.78456098507677,1
+SUC_099,Sucursal Medellín 99,Kiosco,Medellín,Antioquia,6.247612362953251,-75.54050711374131,1
+SUC_100,Sucursal Bucaramanga 100,Kiosco,Bucaramanga,Santander,7.141699975683616,-73.1614052537838,1
+SUC_101,Sucursal Barranquilla 101,Física,Barranquilla,Atlántico,11.005185135559513,-74.81312709734866,1
+SUC_102,Sucursal Cali 102,Corresponsal,Cali,Valle del Cauca,3.4343352666941733,-76.53653006749835,1
+SUC_103,Sucursal Cali 103,Corresponsal,Cali,Valle del Cauca,3.4294256615638807,-76.48687958801393,1
+SUC_104,Sucursal Barranquilla 104,Corresponsal,Barranquilla,Atlántico,11.001991091491213,-74.7842693163787,1
+SUC_105,Sucursal Bucaramanga 105,Física,Bucaramanga,Santander,7.175390782850921,-73.13480396562798,1
+SUC_106,Sucursal Bogotá 106,Kiosco,Bogotá,Cundinamarca,4.6650258137540765,-74.11899700011193,1
+SUC_107,Sucursal Medellín 107,Física,Medellín,Antioquia,6.27812288462846,-75.56906643434138,1
+SUC_108,Sucursal Medellín 108,Física,Medellín,Antioquia,6.241556106094613,-75.61976105538906,1
+SUC_109,Sucursal Medellín 109,Corresponsal,Medellín,Antioquia,6.2641464971246155,-75.55451019016436,1
+SUC_110,Sucursal Medellín 110,Kiosco,Medellín,Antioquia,6.254924749389093,-75.55640743480447,1
+SUC_111,Sucursal Bogotá 111,Física,Bogotá,Cundinamarca,4.757472077303409,-74.11129012503424,1
+SUC_112,Sucursal Bogotá 112,Corresponsal,Bogotá,Cundinamarca,4.7185796728412415,-74.03129738489527,1
+SUC_113,Sucursal Barranquilla 113,Corresponsal,Barranquilla,Atlántico,11.012647059854132,-74.81146702229083,1
+SUC_114,Sucursal Bucaramanga 114,Kiosco,Bucaramanga,Santander,7.158457163378031,-73.14551506194628,1
+SUC_115,Sucursal Cali 115,Kiosco,Cali,Valle del Cauca,3.461641161481684,-76.56989449349327,1
+SUC_116,Sucursal Bucaramanga 116,Física,Bucaramanga,Santander,7.110120376530845,-73.12696219867652,1
+SUC_117,Sucursal Cali 117,Física,Cali,Valle del Cauca,3.4521960789677077,-76.54787688251386,1
+SUC_118,Sucursal Barranquilla 118,Corresponsal,Barranquilla,Atlántico,10.9290538870644,-74.73522124327854,1
+SUC_119,Sucursal Barranquilla 119,Kiosco,Barranquilla,Atlántico,10.933799114909387,-74.8136863038914,1
+SUC_120,Sucursal Bucaramanga 120,Kiosco,Bucaramanga,Santander,7.1024082396387405,-73.08898007811932,1
+SUC_121,Sucursal Bucaramanga 121,Corresponsal,Bucaramanga,Santander,7.121887377163451,-73.08722654015793,1
+SUC_122,Sucursal Bucaramanga 122,Corresponsal,Bucaramanga,Santander,7.107630458298112,-73.14525048309063,1
+SUC_123,Sucursal Bogotá 123,Corresponsal,Bogotá,Cundinamarca,4.749163118400277,-74.09771365608091,1
+SUC_124,Sucursal Barranquilla 124,Kiosco,Barranquilla,Atlántico,10.979533170423053,-74.79340106958718,1
+SUC_125,Sucursal Bogotá 125,Corresponsal,Bogotá,Cundinamarca,4.746095283631246,-74.10391601428424,1
+SUC_126,Sucursal Medellín 126,Corresponsal,Medellín,Antioquia,6.27398323568281,-75.59716611568356,1
+SUC_127,Sucursal Bucaramanga 127,Kiosco,Bucaramanga,Santander,7.163410734525523,-73.11422089720804,1
+SUC_128,Sucursal Bucaramanga 128,Física,Bucaramanga,Santander,7.0839612961958025,-73.09779253358958,1
+SUC_129,Sucursal Barranquilla 129,Kiosco,Barranquilla,Atlántico,10.994316465348247,-74.76223906605534,1
+SUC_130,Sucursal Barranquilla 130,Corresponsal,Barranquilla,Atlántico,10.997793286813232,-74.82199466494454,1
+SUC_131,Sucursal Medellín 131,Corresponsal,Medellín,Antioquia,6.26337871552952,-75.60057939698699,1
+SUC_132,Sucursal Bucaramanga 132,Corresponsal,Bucaramanga,Santander,7.122726048875952,-73.11670780688542,1
+SUC_133,Sucursal Barranquilla 133,Kiosco,Barranquilla,Atlántico,10.973538847275668,-74.79611894723858,1
+SUC_134,Sucursal Barranquilla 134,Corresponsal,Barranquilla,Atlántico,10.949162299134883,-74.80824619587015,1
+SUC_135,Sucursal Medellín 135,Corresponsal,Medellín,Antioquia,6.206155474125506,-75.57761360346161,1
+SUC_136,Sucursal Medellín 136,Física,Medellín,Antioquia,6.21583846398786,-75.58278014127872,1
+SUC_137,Sucursal Bucaramanga 137,Kiosco,Bucaramanga,Santander,7.13507907405123,-73.07174893695375,1
+SUC_138,Sucursal Medellín 138,Corresponsal,Medellín,Antioquia,6.2169483163482555,-75.61325584563146,1
+SUC_139,Sucursal Bogotá 139,Kiosco,Bogotá,Cundinamarca,4.714413508926767,-74.09466886732167,1
+SUC_140,Sucursal Bogotá 140,Kiosco,Bogotá,Cundinamarca,4.690213664455278,-74.02769103852043,1
+SUC_141,Sucursal Barranquilla 141,Física,Barranquilla,Atlántico,11.005771973499854,-74.77389357803737,1
+SUC_142,Sucursal Barranquilla 142,Corresponsal,Barranquilla,Atlántico,10.962546879813601,-74.812863632961,1
+SUC_143,Sucursal Bogotá 143,Corresponsal,Bogotá,Cundinamarca,4.755106359676811,-74.07432708127344,1
+SUC_144,Sucursal Bogotá 144,Corresponsal,Bogotá,Cundinamarca,4.710174656029107,-74.06439788435293,1
+SUC_145,Sucursal Bogotá 145,Física,Bogotá,Cundinamarca,4.675919758447366,-74.06581604029155,1
+SUC_146,Sucursal Cali 146,Física,Cali,Valle del Cauca,3.500991812271022,-76.57015484377885,1
+SUC_147,Sucursal Barranquilla 147,Kiosco,Barranquilla,Atlántico,10.978112684541003,-74.76945816475028,1
+SUC_148,Sucursal Bucaramanga 148,Corresponsal,Bucaramanga,Santander,7.120451446488875,-73.12552789959807,1
+SUC_149,Sucursal Bucaramanga 149,Corresponsal,Bucaramanga,Santander,7.105938024431936,-73.10769726789279,1
+SUC_150,Sucursal Bucaramanga 150,Kiosco,Bucaramanga,Santander,7.0853233574774785,-73.09352628956452,1
+SUC_151,Sucursal Medellín 151,Corresponsal,Medellín,Antioquia,6.260242813719204,-75.61549429066191,1
+SUC_152,Sucursal Medellín 152,Kiosco,Medellín,Antioquia,6.201706486890117,-75.63093242773971,1
+SUC_153,Sucursal Barranquilla 153,Kiosco,Barranquilla,Atlántico,10.977881119511958,-74.8021740710969,1
+SUC_154,Sucursal Medellín 154,Corresponsal,Medellín,Antioquia,6.264895582987903,-75.56090124419062,1
+SUC_155,Sucursal Barranquilla 155,Física,Barranquilla,Atlántico,10.987238492007124,-74.73890889555175,1
+SUC_156,Sucursal Bucaramanga 156,Kiosco,Bucaramanga,Santander,7.155790568028143,-73.15001807862436,1
+SUC_157,Sucursal Bogotá 157,Kiosco,Bogotá,Cundinamarca,4.683480945026603,-74.10720105989247,1
+SUC_158,Sucursal Cali 158,Física,Cali,Valle del Cauca,3.4087409836855813,-76.56540772107792,1
+SUC_159,Sucursal Cali 159,Kiosco,Cali,Valle del Cauca,3.4764957722069623,-76.52507929506808,1
+SUC_160,Sucursal Cali 160,Corresponsal,Cali,Valle del Cauca,3.4140353658174707,-76.51313220087879,1
+SUC_161,Sucursal Barranquilla 161,Corresponsal,Barranquilla,Atlántico,10.968547217711793,-74.78192047806549,1
+SUC_162,Sucursal Bogotá 162,Kiosco,Bogotá,Cundinamarca,4.664986078418361,-74.07889713358392,1
+SUC_163,Sucursal Cali 163,Kiosco,Cali,Valle del Cauca,3.4266367902412003,-76.57286731133689,1
+SUC_164,Sucursal Bucaramanga 164,Kiosco,Bucaramanga,Santander,7.170478627780636,-73.06984275831225,1
+SUC_165,Sucursal Cali 165,Kiosco,Cali,Valle del Cauca,3.4056231673144617,-76.50637311695874,1
+SUC_166,Sucursal Barranquilla 166,Kiosco,Barranquilla,Atlántico,10.98365094894337,-74.73969272120732,1
+SUC_167,Sucursal Medellín 167,Kiosco,Medellín,Antioquia,6.2377884987077,-75.54977550554594,1
+SUC_168,Sucursal Bogotá 168,Corresponsal,Bogotá,Cundinamarca,4.695796105629466,-74.0887691606335,1
+SUC_169,Sucursal Bogotá 169,Física,Bogotá,Cundinamarca,4.693980366357897,-74.05273263260166,1
+SUC_170,Sucursal Cali 170,Kiosco,Cali,Valle del Cauca,3.496119353956321,-76.5006433965262,1
+SUC_171,Sucursal Bucaramanga 171,Física,Bucaramanga,Santander,7.120882590860173,-73.13834828428298,1
+SUC_172,Sucursal Cali 172,Física,Cali,Valle del Cauca,3.4986184726808576,-76.54158249429992,1
+SUC_173,Sucursal Bucaramanga 173,Física,Bucaramanga,Santander,7.141166038648313,-73.11554064056428,1
+SUC_174,Sucursal Barranquilla 174,Física,Barranquilla,Atlántico,10.937258254139453,-74.79512206408484,1
+SUC_175,Sucursal Barranquilla 175,Kiosco,Barranquilla,Atlántico,10.962704095572226,-74.82613882248137,1
+SUC_176,Sucursal Cali 176,Kiosco,Cali,Valle del Cauca,3.4147013228950445,-76.55319708550117,1
+SUC_177,Sucursal Barranquilla 177,Física,Barranquilla,Atlántico,10.921386944244167,-74.76829777229959,1
+SUC_178,Sucursal Medellín 178,Kiosco,Medellín,Antioquia,6.210037816380524,-75.57611609929972,1
+SUC_179,Sucursal Bucaramanga 179,Corresponsal,Bucaramanga,Santander,7.084720920128152,-73.07057428606048,1
+SUC_180,Sucursal Bogotá 180,Corresponsal,Bogotá,Cundinamarca,4.755706074235936,-74.05732903112163,1
+SUC_181,Sucursal Medellín 181,Corresponsal,Medellín,Antioquia,6.28746530599341,-75.60201384397382,1
+SUC_182,Sucursal Cali 182,Corresponsal,Cali,Valle del Cauca,3.4850723945576694,-76.48397553673966,1
+SUC_183,Sucursal Medellín 183,Corresponsal,Medellín,Antioquia,6.249326507688047,-75.59284139867528,1
+SUC_184,Sucursal Bucaramanga 184,Kiosco,Bucaramanga,Santander,7.150029254549239,-73.15614916554091,1
+SUC_185,Sucursal Bogotá 185,Corresponsal,Bogotá,Cundinamarca,4.738267513267701,-74.03665876200279,1
+SUC_186,Sucursal Cali 186,Kiosco,Cali,Valle del Cauca,3.4283172663066903,-76.58174347406414,1
+SUC_187,Sucursal Cali 187,Kiosco,Cali,Valle del Cauca,3.4595923383883402,-76.51600592469451,1
+SUC_188,Sucursal Medellín 188,Corresponsal,Medellín,Antioquia,6.248058057770388,-75.5966876058307,1
+SUC_189,Sucursal Bucaramanga 189,Kiosco,Bucaramanga,Santander,7.113121005421388,-73.07651477442847,1
+SUC_190,Sucursal Medellín 190,Kiosco,Medellín,Antioquia,6.218080554416625,-75.59290291510703,1
+SUC_191,Sucursal Barranquilla 191,Física,Barranquilla,Atlántico,10.950317632723381,-74.78400237497596,1
+SUC_192,Sucursal Barranquilla 192,Corresponsal,Barranquilla,Atlántico,11.017341400193937,-74.75206063393001,1
+SUC_193,Sucursal Medellín 193,Corresponsal,Medellín,Antioquia,6.290682443837091,-75.61857537301906,1
+SUC_194,Sucursal Bucaramanga 194,Corresponsal,Bucaramanga,Santander,7.162370031336222,-73.08238096259457,1
+SUC_195,Sucursal Barranquilla 195,Física,Barranquilla,Atlántico,10.971095108680757,-74.78560719255258,1
+SUC_196,Sucursal Medellín 196,Corresponsal,Medellín,Antioquia,6.281293297134922,-75.53420432059589,1
+SUC_197,Sucursal Bogotá 197,Corresponsal,Bogotá,Cundinamarca,4.739152529127303,-74.09559772204567,1
+SUC_198,Sucursal Bucaramanga 198,Kiosco,Bucaramanga,Santander,7.115148332388578,-73.16176846794205,1
+SUC_199,Sucursal Cali 199,Kiosco,Cali,Valle del Cauca,3.4875342184168265,-76.54399906024773,1
+SUC_200,Sucursal Cali 200,Kiosco,Cali,Valle del Cauca,3.4734717425222983,-76.50605981906656,1
