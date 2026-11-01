@@ -169,3 +169,71 @@ conn: Es como levantar el teléfono y abrir la línea de comunicación con la ba
 cursor: Es el mensajero. Le entregas una orden en SQL (cursor.execute("SELECT COUNT(*)...")) y él te trae la respuesta a la pantalla (cursor.fetchone()).
 df.to_sql(...):
 Es el camión de mudanza: toma la tabla que tienes en memoria con Pandas y la inserta con todas sus filas directamente en la tabla SQL relacional.
+
+TF
+Terraform
+Este archivo contiene planos de infraestructura en lenguaje HCL 
+
+1. ¿Por qué 4 archivos y no uno solo gigante?
+Terraform es tan inteligente que al ejecutarse une todos los archivos .tf en uno solo mentalmente.
+Podríamos meter todo en un solo archivo de 600 líneas, pero separarlo en 4 es el estándar de oro de la industria:
+Archivo	Rol en la obra	¿Para qué sirve?
+providers.tf	Los Contratistas	Define con qué empresas trabajamos (Azure y generador de nombres únicos).
+variables.tf	La Botonera	Los valores que puedes cambiar (región, ambiente dev o prod) sin tocar los planos.
+main.tf	Los Planos de Construcción	La lista exacta de edificios a construir (Data Lake, Bóveda, Fábrica).
+outputs.tf	La Factura de Entrega	Le avisa al equipo: "aquí quedó construida la bodega y esta es su dirección web".
+2. ¿Cómo funcionan las variables en la práctica?
+Imagina que en main.tf tienes que escribir el país o región 15 veces.
+Sin variables (Mala práctica): Escribes "eastus2" quemado en 15 lugares distintos. Si el banco decide mudarse a Europa, tienes que buscar y cambiar 15 líneas arriesgándote a olvidar una.
+Con variables (Buena práctica): En los planos escribes var.location. Si el banco cambia de sede, cambias una sola línea en variables.tf y los 15 edificios se mudan solos.
+
+Fundamentos de Ingeniería de Datos: Resumen Académico del Proyecto
+
+I. El Cambio de Paradigma: Desarrollo de Apps vs. Ingeniería de Datos
+En el desarrollo tradicional de software (como tu app de asambleas con Node.js y npm run dev):
+El objetivo es la interacción del usuario en tiempo real (pantallas, botones, formularios y APIs transaccionales).
+
+En la Ingeniería de Datos:
+El objetivo es la trazabilidad, pureza y procesamiento masivo del dato histórico. No construimos interfaces visuales; construimos tuberías analíticas automatizadas (Pipelines) que transportan millones de registros desde sistemas operativos hacia almacenes optimizados para la toma de decisiones empresariales.
+
+II. Fase 1: Simulación de Sistemas Transaccionales (OLTP) y Modelado Relacional
+
+Sistemas Transaccionales (OLTP):
+Son bases de datos diseñadas para el día a día operativo (registrar un pago, crear un cliente).
+Se estructuran bajo Reglas de Normalización para no duplicar información innecesariamente.
+
+Integridad Referencial y Jerarquía de Entidades:
+Entidades Fuertes (Maestras / Dimensiones): Clientes, Productos, Sucursales. Tienen existencia propia e identificadores únicos (Primary Keys / PK).
+
+Entidades Débiles (Eventos / Transacciones): Movimientos bancarios, Comisiones, Obligaciones. Dependen obligatoriamente de una entidad fuerte mediante llaves foráneas (Foreign Keys / FK).
+
+Principio de Ingesta: No puede existir una transacción de un cliente que no ha sido creado previamente.
+Determinismo y Reproducibilidad (Random Seed):
+En ciencia de la computación, el azar no existe; se utilizan generadores de números pseudoaleatorios.
+La Semilla (Seed = 42) fija el punto de partida del algoritmo. Esto asegura que ante cualquier auditoría o evaluación técnica, el código genere exactamente los mismos registros, importes y fechas, eliminando la variabilidad no controlada.
+
+Inyección Controlada de Ruido y Calidad:
+La data real de las empresas nunca es perfecta. Para probar la robustez del pipeline, se introdujo intencionalmente:
+Una tasa controlada de datos ausentes (5% de valores nulos).
+Anomalías documentadas: Registros duplicados exactos y fechas fuera del rango operacional.
+
+
+III. Fase 2: Infraestructura como Código (IaC) y Arquitectura Cloud en Azure
+
+El Concepto de Declaratividad en Terraform:
+A diferencia de los scripts imperativos (donde le dices al computador "haz A, luego haz B, luego haz C"), Terraform es declarativo: describes en archivos .tf el estado final deseado de la arquitectura, y el motor de Terraform calcula internamente las llamadas API necesarias para construirlo en Azure sin intervención humana.
+Componentes Arquitectónicos Desplegados en Azure:
+Resource Group (rg-finbank-dev): Frontera lógica de aislamiento para gobernanza administrativa, seguridad y control del ciclo de vida de los activos.
+
+Azure Data Lake Storage Gen2 (stfinbankdevrch7): Sistema de almacenamiento de objetos optimizado para analítica masiva mediante Espacio de Nombres Jerárquico (Hierarchical Namespace - HNS). Esto permite operaciones atómicas sobre directorios (moverse entre carpetas en milisegundos en vez de reescribir archivos).
+
+Azure Data Factory (adf-finbank-dev-rch7): Servicio de orquestación ETL/ELT para programar y monitorear la ejecución de los flujos de datos.
+
+Azure Key Vault (kv-finbank-rch7): Almacén centralizado de secretos bajo estándares criptográficos. Elimina la práctica riesgosa de quemar credenciales en el código fuente (Secrets Sprawl).
+Log Analytics Workspace (law-finbank-dev): Repositorio central de telemetría y auditoría operacional para responder "quién, cuándo y qué se ejecutó".
+
+Action Group (ag-finbank-alerts): Sistema de suscripción y notificación reactiva que dispara alertas automáticas por correo ante eventos de falla.
+
+Gobernanza Financiera (FinOps):
+Se aplicó la política de menor costo operacional (Replicación LRS local, retención de logs a 30 días y nivel de servicio Standard), respaldado por un presupuesto preventivo con alertas al 80% del gasto devengado.
+

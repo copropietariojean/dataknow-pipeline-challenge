@@ -18,3 +18,12 @@ Este módulo de Terraform aprovisiona la arquitectura base para la plataforma de
 1. Autenticar la sesión en Azure CLI:
    ```bash
    az login
+   project_name = "finbank"
+environment  = "dev"
+location     = "eastus2"
+alert_email  = "jeanmichell.romero@hotmail.com"
+
+2. Inicializar y desplegar:
+terraform init
+terraform plan
+terraform apply
