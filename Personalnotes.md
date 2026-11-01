@@ -108,3 +108,64 @@ Genera el puntaje de Datacrédito realista: la masa está entre 570 y 730, y cas
 df.to_parquet(...) (El estándar Big Data):
 Un CSV es texto plano (pesado y lento).
 Parquet guarda los datos comprimidos por columnas en ceros y unos. Pesa 80% menos y la nube de Azure lo procesa 10 veces más rápido.
+
+Se generaron los archivos después de entender un poco la forma en que se escribió el codigo y se corrigieron dos lineas de codigo: "# Formato CSV con firma UTF-8 para Excel
+df_sucursales.to_csv(os.path.join(out_dir, "TB_SUCURSALES_RED.csv"), index=False, encoding="utf-8-sig")
+df_clientes.to_csv(os.path.join(out_dir, "TB_CLIENTES_CORE.csv"), index=False, encoding="utf-8-sig")" Puesto que no estaban saliendo los nombres y demas datos de las tablas con las tildes "encoding="utf-8-sig"".
+
+¿Por qué le llamaron Mermaid?
+Su creador (Knut Sveidqvist) lo llamó Mermaid ("Sirena") porque quería una herramienta ágil y fluida que pudiera "nadar" dentro del texto Markdown sin complicaciones. Hoy es el estándar adoptado por GitHub, Microsoft y GitLab para hacer diagramas técnicos sin tocar programas de diseño.
+
+Recordando relacionamiento de tablas y tipos de variables
+
+1. Relación 1 a 1 (Uno a Uno)
+Cada fila de la Tabla A se conecta con una única fila exclusiva en la Tabla B.
+Se utiliza principalmente para aislar datos confidenciales (como salarios o historiales médicos) del resto del sistema.
+Optimiza la velocidad al separar información pesada (como fotos o contratos) de los datos de consulta rápida.
+Ambas tablas comparten exactamente la misma llave única de identificación.
+2. Relación 1 a N (Uno a Muchos)
+Un único registro maestro se vincula con múltiples registros dependientes en otra tabla.
+Es el patrón más común en el mundo de los negocios para registrar actividades históricas (compras, visitas, pagos).
+La llave del maestro viaja a la tabla de detalle como llave foránea (Foreign Key) para no repetir datos innecesarios.
+Garantiza que si el cliente cambia de dirección, solo se actualiza una sola vez en el maestro.
+3. Relación N a N (Muchos a Muchos)
+Múltiples registros de la Tabla A se conectan con múltiples registros de la Tabla B.
+No se puede conectar de forma directa en bases de datos relacionales; requiere obligatoriamente una tabla intermedia o "puente".
+Ejemplo clásico: Estudiantes y Cursos (un alumno toma varios cursos y un curso tiene muchos alumnos).
+
+
+Este diagrama es el plano arquitectónico del banco. Aquí le dices al sistema cómo se debe comportar cada dato:
+int (Integer): Números enteros sin decimales (como id_cli: 1, 2, 3 o score_buro: 650).
+string: Cadenas de texto o letras (como nomb_cli: Carlos o ciudad: Bogotá).
+date / time: Fechas (2026-05-10) y horas (14:30:00).
+decimal: Números con centavos para plata y finanzas (vr_mov: 54200.50). En bancos nunca se usa texto para el dinero para poder sumar y calcular intereses.
+Y lo más importante que ves al lado:
+PK (Primary Key / Llave Primaria): El identificador único que no se puede repetir (la cédula de la fila).
+FK (Foreign Key / Llave Foránea): La columna que viaja a otra tabla para hacer la conexión (el VLOOKUP).
+
+Preguntas de la generación de los archivos schema y load_to_sql
+
+*1. ¿Por qué num_doc es TEXT y no INTEGER?*
+Existe una regla de oro en Ingeniería de Datos:
+"Si con ese número jamás vas a hacer operaciones matemáticas (sumar, restar, sacar promedios), guárdalo siempre como TEXTO".
+Pérdida de ceros a la izquierda: Si una persona tiene documento 00123456, al guardarlo como número la base de datos lo convierte en 123456 y corrompe la cédula.
+Cédulas de Extranjería / Pasaportes: Muchos documentos de identidad contienen letras (ej. E-104928). Si fuera entero, el sistema fallaría al intentar guardarlo.
+
+*2. ¿Por qué fec_nac es TEXT en el schema.sql?*
+En bases de datos gigantes como Oracle o SQL Server existe el tipo DATE. Sin embargo, el motor liviano SQLite maneja todas las fechas bajo el estándar internacional ISO-8601 en formato TEXTO (YYYY-MM-DD). Esto permite ordenar fechas alfabéticamente de menor a mayor sin errores de cálculo.
+
+*3. Llaves Foráneas y NOT NULL (Le atinaste perfecto)*
+NOT NULL: Significa "campo obligatorio". Si el sistema intenta guardar una sucursal sin nombre, la base de datos bloquea el registro por falta de calidad.
+FOREIGN KEY (...) REFERENCES ...: Es el candado de integridad. Le dice a la base de datos: "Si alguien intenta registrar una transacción con un id_cli = 999999 y ese cliente no existe en TB_CLIENTES_CORE, no permitas guardar la transacción".
+
+*4. ¿Qué son os y sqlite3 en Python?*
+import os (Operating System / Explorador de archivos):
+Es la librería nativa de Python para interactuar con tu disco duro.
+Permite que el código funcione igual en tu computador, en el mío o en un servidor de Linux sin que se dañen las rutas de las carpetas (os.path.join).
+import sqlite3 (El motor de base de datos):
+Es un motor relacional SQL completo que viene incluido gratis dentro de Python. No requiere servidores ni instalaciones complejas; crea un archivo (finbank_source.db) que se comporta exactamente igual a un SQL Server o PostgreSQL.
+conn (Connection) y cursor:
+conn: Es como levantar el teléfono y abrir la línea de comunicación con la base de datos.
+cursor: Es el mensajero. Le entregas una orden en SQL (cursor.execute("SELECT COUNT(*)...")) y él te trae la respuesta a la pantalla (cursor.fetchone()).
+df.to_sql(...):
+Es el camión de mudanza: toma la tabla que tienes en memoria con Pandas y la inserta con todas sus filas directamente en la tabla SQL relacional.
