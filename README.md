@@ -59,7 +59,8 @@ flowchart TD
     Gold --> KPIs
     Gold --> RBAC
     DAG --> Logs
-    DAG --> Alerts
+        DAG --> Alerts
+---
 
 ## 3. Estructura del Repositorio
 
