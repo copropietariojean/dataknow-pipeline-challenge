@@ -237,3 +237,33 @@ Action Group (ag-finbank-alerts): Sistema de suscripción y notificación reacti
 Gobernanza Financiera (FinOps):
 Se aplicó la política de menor costo operacional (Replicación LRS local, retención de logs a 30 días y nivel de servicio Standard), respaldado por un presupuesto preventivo con alertas al 80% del gasto devengado.
 
+## IV. Fase 3: Arquitectura Medallón (Procesamiento Progresivo del Dato)
+
+### 1. Capa Bronze (Raw / Crudo)
+* **Propósito:** Ingesta fiel desde el origen sin alterar datos.
+* **Metadatos de Auditoría:**
+  * `fecha_ingesta`: Momento exacto de captura.
+  * `sistema_fuente`: Origen del dato (`FINBANK_CORE_SQL`).
+  * `id_lote` (UUID): Identificador único de ejecución para trazabilidad.
+* **Particionamiento Temporal:** Organización física en subcarpetas (`year/month/day`) para evitar escaneos completos del disco en consultas incrementales.
+
+### 2. Capa Silver (Enriquecimiento, Calidad y Seguridad)
+* **Gobierno de Privacidad (Habeas Data):** Encriptación con función criptográfica unidireccional `SHA-256` sobre campos sensibles (`num_doc`). El dato original desaparece; se conserva un token irreconocible pero único para poder hacer cruces.
+* **Aislamiento en Cuarentena (`TB_ERRORES_PIPELINE`):** Los registros con fechas absurdas (2030) o valores negativos no se eliminan silenciosamente; se envían a una tabla de auditoría con la causa documentada.
+* **Regla Analítica de Fraude:** Marcado estadístico de anomalías cuando el monto supera `Media + 3 Desviaciones Estándar` (`ind_sospechoso = 1`).
+
+### 3. Capa Gold (Modelo Dimensional y Lógica de Negocio)
+* **Modelo en Estrella:** Separación de Dimensiones (`dim_clientes`, `dim_productos`, `dim_geografia`, `dim_canal`) y Hechos (`fact_transacciones`, `fact_cartera`).
+* **Regulación Financiera:** Cálculo de tramos de mora (*Buckets*: Al día, Rango 1, Rango 2, Rango 3, Deteriorado) y cálculo de provisión bancaria porcentual según riesgo.
+* **Agregaciones Ejecutivas:** Tabla `kpi_diarios_cartera` para que la junta directiva consulte saldos totales, cartera vencida y tasa de mora por ciudad y producto en tiempo real.
+
+### 4. Pruebas Automatizadas de Calidad (Data Quality)
+* Conjunto de 5 aserciones automatizadas (Completitud, No Nulidad, Rango Válido, Integridad Referencial y Unicidad) con resultado 5/5 APROBADO (100%).
+
+
+### 1. ¿Qué es RBAC? (La analogía del edificio de oficinas)
+RBAC significa Role-Based Access Control (Control de Acceso Basado en Roles).
+Piensa en los carnets de acceso de un banco:
+El Carnet de Administrador (Owner): Abre la bóveda, el tejado, los servidores y las oficinas.
+El Carnet de Ingeniero de Datos (Storage Blob Data Contributor): Puede entrar a las tres bodegas (bronze, silver, gold) a meter y sacar datos, pero no puede cambiar la tarjeta de crédito con la que se paga Azure.
+El Carnet de Analista (Storage Blob Data Reader): El torniquete solo le abre la puerta del piso Gold. Si intenta pasar su carnet en Bronze o Silver, la puerta suena en rojo y dice: Acceso Denegado (HTTP 403 Forbidden).

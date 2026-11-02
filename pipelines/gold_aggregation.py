@@ -79,6 +79,18 @@ kpi_diarios_cartera = kpi_cartera.groupby(["fec_desembolso", "cod_prod", "cod_se
 
 kpi_diarios_cartera["tasa_mora_porc"] = ((kpi_diarios_cartera["saldo_en_mora"] / kpi_diarios_cartera["saldo_total_cartera"]) * 100).round(2)
 
+# 7. FACT_RENTABILIDAD_CLIENTE: Cálculo de CLTV y Comisiones Mensuales (Página 6)
+df_com["periodo_mes"] = pd.to_datetime(df_com["fec_cobro"]).dt.to_period("M").astype(str)
+com_cliente = df_com.groupby(["id_cli", "periodo_mes"])["vr_comision"].sum().reset_index()
+
+# Estimación de ingresos por intereses desde obligaciones
+int_cliente = fact_cartera.groupby("id_cli")["vr_cuota"].sum().reset_index().rename(columns={"vr_cuota": "ingreso_intereses"})
+
+fact_rentabilidad_cliente = com_cliente.merge(int_cliente, on="id_cli", how="left").fillna(0)
+fact_rentabilidad_cliente["ingreso_total"] = fact_rentabilidad_cliente["vr_comision"] + (fact_rentabilidad_cliente["ingreso_intereses"] * 0.15)
+# CLTV Acumulado
+fact_rentabilidad_cliente["cltv_acumulado"] = fact_rentabilidad_cliente.groupby("id_cli")["ingreso_total"].cumsum().round(2)
+
 # Guardar y subir toda la Capa Gold a Azure
 tablas_gold = {
     "dim_clientes": dim_clientes,
@@ -87,7 +99,8 @@ tablas_gold = {
     "dim_canal": dim_canal,
     "fact_cartera": fact_cartera,
     "fact_transacciones": fact_transacciones,
-    "kpi_diarios_cartera": kpi_diarios_cartera
+    "kpi_diarios_cartera": kpi_diarios_cartera,
+    "fact_rentabilidad_cliente": fact_rentabilidad_cliente
 }
 
 for name, df_g in tablas_gold.items():

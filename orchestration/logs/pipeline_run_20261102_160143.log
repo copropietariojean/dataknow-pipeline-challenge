@@ -1,0 +1,24 @@
+[2026-11-02 16:01:43] =================================================================
+[2026-11-02 16:01:43] INICIANDO ORQUESTADOR BANCARIO: dag_finbank_nightly_etl
+[2026-11-02 16:01:43] TRIGGER: Programado (02:00 AM) / Manual
+[2026-11-02 16:01:43] =================================================================
+[2026-11-02 16:01:43] >>> Ejecutando Tarea: 1. INGESTA_BRONZE (Intento 1/3)...
+[2026-11-02 16:01:59] ✔ [ÉXITO] 1. INGESTA_BRONZE completada en 16.21s
+[2026-11-02 16:01:59] >>> Ejecutando Tarea: 2. TRANSFORMACION_SILVER (Intento 1/3)...
+[2026-11-02 16:02:08] ✔ [ÉXITO] 2. TRANSFORMACION_SILVER completada en 8.96s
+[2026-11-02 16:02:08] >>> Ejecutando Tarea: 3. AGREGACION_GOLD (Intento 1/3)...
+[2026-11-02 16:02:23] ✔ [ÉXITO] 3. AGREGACION_GOLD completada en 15.33s
+[2026-11-02 16:02:23] >>> Ejecutando Tarea: 4. PRUEBAS_DATA_QUALITY (Intento 1/3)...
+[2026-11-02 16:02:24] ✔ [ÉXITO] 4. PRUEBAS_DATA_QUALITY completada en 0.71s
+[2026-11-02 16:02:24] 
+=================================================================
+[2026-11-02 16:02:24] 📊 REPORTE DE RESUMEN DIARIO DE EJECUCIÓN (FINBANK PIPELINE)
+[2026-11-02 16:02:24] =================================================================
+[2026-11-02 16:02:24] • Programación: Diaria a las 02:00:00 (America/Bogota)
+[2026-11-02 16:02:24] • Estado General: 100% EXITOSO (SUCCESS)
+[2026-11-02 16:02:24] • Capa Bronze: 620,260 registros ingestados y particionados
+[2026-11-02 16:02:24] • Capa Silver: 499,988 transacciones limpias | 12 anomalías en cuarentena
+[2026-11-02 16:02:24] • Capa Gold:   Modelo dimensional cargado | 7 tablas analíticas en Azure
+[2026-11-02 16:02:24] • Calidad:     5/5 Pruebas de calidad aprobadas (100% conforme)
+[2026-11-02 16:02:24] • Archivo Log: C:\Users\JEANMICHELLMF\dataknow-pipeline-challenge\orchestration\logs\pipeline_run_20261102_160143.log
+[2026-11-02 16:02:24] =================================================================
