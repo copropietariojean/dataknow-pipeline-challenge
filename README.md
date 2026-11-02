@@ -59,7 +59,9 @@ flowchart TD
     Gold --> KPIs
     Gold --> RBAC
     DAG --> Logs
-        DAG --> Alerts
+    DAG --> Alerts
+```
+
 ---
 
 ## 3. Estructura del Repositorio
@@ -105,8 +107,11 @@ dataknow-pipeline-challenge/
 ├── .gitignore                  # Protección de secretos (*.tfstate, .env)
 └── README.md                   # Documentación principal de la solución
 
+---
 
 ## 4. Guía de Reproducción Paso a Paso
+
+---
 Para desplegar y reproducir la solución completa en cualquier máquina:
 1. Clonar el repositorio e instalar dependencias:
 git clone https://github.com/copropietariojean/dataknow-pipeline-challenge.git
@@ -131,8 +136,12 @@ python orchestration/pipeline_orchestrator.py
 5. Validar suite de calidad de datos:
 python pipelines/data_quality_tests.py
 
+---
 
 ## 5. Resumen de Evidencias en Nube (Azure)
+
+---
+
 Todas las evidencias gráficas detalladas están documentadas en /docs/:
 1. Despliegue IaC en Azure: docs/Evidencias/01_terraform_apply_exitoso.png y 02_recursos_azure_portal.png
 2. Estructura Data Lake Gen2: docs/Evidencias/03_contenedores_adls_gen2.png
@@ -142,11 +151,9 @@ Todas las evidencias gráficas detalladas están documentadas en /docs/:
 6. Orquestación y Logs Operacionales: docs/Evidencias/07_orquestacion_dag_exitoso.png
 7. Control de Acceso RBAC (Analista en Gold): docs/Evidencias/08_rbac_analista_gold.png
 
+---
 
-Autor
-Jean Michell Romero
-Ingeniería y Arquitectura de Datos
-
-
-
-
+## Jean Michell Romero
+Magíster en Mercadeo Estratégico
+Administrador de empresas
+![Image](https://img.shields.io/badge/GitHub-copropietariojean-181717?style=flat&logo=github)
